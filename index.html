@@ -445,7 +445,7 @@
   }
 
   /* ================= HERO ================= */
-  .hero{padding:52px 0 0; position:relative; overflow:hidden;}
+  .hero{padding:20px 0 0; position:relative; overflow:hidden;}
   .hero-bg{ position:absolute; inset:0; z-index:0; pointer-events:none; }
   .hero-bg .glow-a, .hero-bg .glow-b{ position:absolute; border-radius:50%; filter:blur(100px); }
   .hero-bg .glow-a{ width:560px; height:560px; top:-260px; right:-160px; background:radial-gradient(circle, rgba(var(--accent-rgb),0.16), transparent 70%); animation:drift-a 16s ease-in-out infinite alternate; }
@@ -576,7 +576,14 @@
   .social-icon:hover svg{transform:scale(1.08);}
 
   /* ---------- TERMINAL PANEL ---------- */
-  .hero-aside{display:flex; flex-direction:column; gap:14px;}
+  .hero-aside{display:flex; flex-direction:column; gap:14px; align-self:start;}
+  .hero-portrait{
+    display:block;
+    width:100%;
+    height:clamp(320px, 30vw, 400px);
+    object-fit:contain;
+    object-position:center top;
+  }
   .terminal{
     background:var(--surface-raised); border:1px solid var(--border); border-radius:var(--radius-lg);
     box-shadow:var(--shadow-lg); overflow:hidden; position:relative;
@@ -617,6 +624,7 @@
   @media (max-width:940px){
     .hero-grid{grid-template-columns:1fr; gap:40px; padding-bottom:40px;}
     .hero-aside{max-width:460px;}
+    .hero-portrait{height:clamp(300px, 60vw, 400px); margin:0 auto;}
   }
 
   /* ---------- METRICS STRIP ---------- */
@@ -1096,6 +1104,7 @@
       </div>
 
       <aside class="hero-aside reveal reveal-hero reveal-delay-6">
+        <img src="Assets/profile.png" alt="Venkata Bhavanarayana Avvari — DevOps Engineer" class="hero-portrait" />
         <div class="terminal">
           <div class="terminal-bar">
             <span class="terminal-dot r"></span><span class="terminal-dot y"></span><span class="terminal-dot g"></span>
@@ -2256,6 +2265,39 @@
           updateRect();
           scrollRectTicking = false;
         });
+      }, { passive: true });
+    }
+
+    if(!reduceMotion){
+      const heroEl = document.querySelector('.hero');
+      field.classList.add('is-interactive');
+
+      function touchXY(e){
+        const t = e.touches[0];
+        mouse.x = t.clientX - fieldRect.left;
+        mouse.y = t.clientY - fieldRect.top;
+      }
+
+      heroEl.addEventListener('touchstart', (e) => {
+        touchXY(e);
+        active = true;
+        ensureLoop();
+      }, { passive: true });
+
+      heroEl.addEventListener('touchmove', (e) => {
+        touchXY(e);
+        active = true;
+        ensureLoop();
+      }, { passive: true });
+
+      heroEl.addEventListener('touchend', () => {
+        active = false;
+        ensureLoop();
+      }, { passive: true });
+
+      heroEl.addEventListener('touchcancel', () => {
+        active = false;
+        ensureLoop();
       }, { passive: true });
     }
 

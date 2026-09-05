@@ -1,0 +1,101 @@
+/* ============================================================
+   RESPONSIVE — breakpoints for 320px through 1920px+
+   ============================================================ */
+
+/* ---- Phone / Tablet refinements (≤768px) ---- */
+@media (max-width: 768px) {
+  .hero { padding: 36px 0 0; }
+  .hero-grid { gap: 32px; padding-bottom: 36px; }
+  .hero-name { flex-wrap: wrap; row-gap: 4px; }
+  .hero h1 { font-size: clamp(2.3rem, 8vw, 3.4rem); line-height: 1.08; }
+  .hero p.lede { font-size: 1.03rem; max-width: none; }
+  section { padding: clamp(48px, 10vw, 76px) 0; }
+  .section-head { margin-bottom: 34px; }
+  .metric { padding: 20px 18px; }
+  .project { padding: 22px 20px; }
+  .skill-group { padding: 22px 20px; }
+  .highlight-card { padding: 20px; }
+  .contact-form { padding: 26px 22px; }
+  .job-list { padding-left: 26px; gap: 26px; }
+  .job::before { left: -26px; width: 13px; height: 13px; top: 24px; }
+  .job::after { left: -21.5px; top: 29.5px; }
+}
+
+/* ---- Small-screen refinements (≤480px) ---- */
+@media (max-width: 480px) {
+  .hero { padding: 32px 0 0; }
+  .hero-break { display: none; }
+  .kicker-badge {
+    font-size: 0.7rem;
+    padding: 6px 12px 6px 9px;
+    gap: 7px;
+    margin-bottom: 18px;
+    white-space: normal;
+  }
+  .hero-name { font-size: 0.78rem; flex-wrap: wrap; row-gap: 4px; margin-bottom: 12px; }
+  .hero h1 { max-width: none; font-size: clamp(2.1rem, 9.5vw, 2.7rem); margin-bottom: 16px; }
+  .hero p.lede { font-size: 0.98rem; margin-bottom: 24px; }
+  .stack-strip { gap: 7px; margin-bottom: 26px; }
+  .stack-chip { font-size: 0.73rem; padding: 6px 10px 6px 8px; }
+  .cta-row { flex-direction: column; gap: 10px; margin-bottom: 26px; }
+  .cta-row .btn { width: 100%; flex: none; justify-content: center; padding: 14px 18px; }
+  .social-row { gap: 8px; }
+  section { padding: 40px 0; }
+  .section-head { margin-bottom: 26px; }
+  .section-head p { font-size: 0.95rem; }
+  .terminal-body { font-size: 0.72rem; padding: 15px 13px 17px; line-height: 1.85; }
+  .terminal-body .tbl { font-size: 0.64rem; gap: 3px 6px; grid-template-columns: 1.3fr 0.65fr 0.85fr; }
+  .aside-note { padding: 12px 15px; font-size: 0.7rem; flex-wrap: wrap; row-gap: 6px; }
+  .portrait-wrap { width: 180px; height: 240px; }
+  .portrait { width: 180px; height: 240px; border-radius: 18px; }
+  .portrait-ring { border-radius: 22px; }
+  .portrait-ring::after { border-radius: 20px; }
+  .portrait-glow { border-radius: 26px; }
+  .portrait-badge { font-size: 0.62rem; padding: 4px 9px 4px 8px; right: -6px; bottom: 10px; }
+  .metrics { padding: 0 0 56px; }
+  .metric { padding: 18px 16px; gap: 12px; }
+  .metric-num { font-size: 1.3rem; }
+  .about-highlights { gap: 10px; }
+  .highlight-card { padding: 18px; gap: 13px; }
+  .job-list { padding-left: 20px; gap: 22px; }
+  .job::before { left: -20px; width: 12px; height: 12px; top: 23px; }
+  .job::after { left: -16px; top: 28px; }
+  .job-card { padding: 20px 16px; }
+  .job-card-head { gap: 12px; margin-bottom: 14px; padding-bottom: 14px; }
+  .job-logo { width: 36px; height: 36px; min-width: 36px; font-size: 0.72rem; }
+  .job-card h3 { font-size: 1.04rem; }
+  .job-highlight { padding: 12px 14px; }
+  .project { padding: 20px 16px; }
+  .project-head { gap: 14px; }
+  .project-head h3 { font-size: 1.04rem; }
+  .project-summary { font-size: 0.9rem; }
+  .skill-group { padding: 20px 16px; }
+  .skills-grid { gap: 12px; }
+  .contact-form { padding: 22px 18px; }
+  .field { margin-bottom: 18px; }
+  .avail-card { padding: 18px; }
+  .contact-links { padding: 4px 18px; }
+  .contact-side { gap: 12px; }
+  .footer-panel { padding: 16px 18px; flex-direction: column; align-items: flex-start; }
+  .mobile-menu a { font-size: 1.7rem; padding: 9px 0; }
+  .mobile-menu-foot { margin-top: 24px; }
+}
+
+/* ---- Extra-narrow phones (≤375px) ---- */
+@media (max-width: 375px) {
+  .wrap { padding: 0 16px; }
+  .hero h1 { font-size: clamp(1.9rem, 10vw, 2.3rem); }
+  .cta-row .btn { padding: 13px 14px; font-size: 0.88rem; }
+}
+
+/* ---- Large screens (≥1440px) ---- */
+@media (min-width: 1440px) {
+  :root { --maxw: 1280px; }
+}
+
+/* ---- Extra-large (≥1920px) ---- */
+@media (min-width: 1920px) {
+  :root { --maxw: 1380px; }
+  body { font-size: 17px; }
+  .hero h1 { font-size: clamp(3rem, 4vw, 4.5rem); }
+}

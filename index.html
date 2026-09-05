@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Venkata Bhavanarayana Avvari — DevOps Engineer</title>
+  <meta name="description" content="Venkata Bhavanarayana Avvari — DevOps Engineer specializing in cloud infrastructure, Kubernetes, and enterprise integration platforms. Based in Berlin.">
+  <meta name="author" content="Venkata Bhavanarayana Avvari">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://avvarivenkata.dev/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://avvarivenkata.dev/">
+  <meta property="og:title" content="Venkata Bhavanarayana Avvari — DevOps Engineer">
+  <meta property="og:description" content="DevOps Engineer specializing in cloud infrastructure, Kubernetes, CI/CD, and enterprise integration platforms. Based in Berlin.">
+  <meta property="og:image" content="https://avvarivenkata.dev/Assets/profile.png">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="de_DE">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Venkata Bhavanarayana Avvari — DevOps Engineer">
+  <meta name="twitter:description" content="DevOps Engineer — Kubernetes, CI/CD, AWS, Terraform. Berlin-based.">
+  <meta name="twitter:image" content="https://avvarivenkata.dev/Assets/profile.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%235B8CFF'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='18' font-weight='700' fill='%23090B10' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Venkata Bhavanarayana Avvari",
+    "jobTitle": "DevOps Engineer",
+    "url": "https://avvarivenkata.dev",
+    "image": "https://avvarivenkata.dev/Assets/profile.png",
+    "email": "avvarinarayana97@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/your-profile",
+      "https://github.com/your-username"
+    ],
+    "knowsAbout": ["Kubernetes", "Terraform", "AWS", "CI/CD", "Docker", "SAP Integration", "ELK Stack", "Prometheus", "Grafana"]
+  }
+  </script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="false">
+    <div class="preloader-terminal">
+      <div class="preloader-bar-top">
+        <span class="preloader-dot r"></span>
+        <span class="preloader-dot y"></span>
+        <span class="preloader-dot g"></span>
+        <span class="preloader-title">venkata@berlin — zsh</span>
+      </div>
+      <div class="preloader-body">
+        <div class="preloader-line"><span class="pl-prompt">➜</span> <span class="pl-path">~</span> <span class="pl-cmd" id="plCmd">npm run portfolio</span></div>
+        <div class="preloader-line pl-out"><span class="pl-dim">[</span><span class="pl-info" id="plInfo">info</span><span class="pl-dim">]</span> initializing environment...</div>
+        <div class="preloader-name-wrap">
+          <h1 class="preloader-name">Venkata</h1>
+        </div>
+        <div class="preloader-line pl-out"><span class="pl-dim">[</span><span class="pl-info" id="plInfo2">info</span><span class="pl-dim">]</span> <span id="plStatus">compiling assets</span></div>
+        <div class="preloader-progress">
+          <div class="preloader-bar-track">
+            <div class="preloader-bar-fill" id="preloaderFill"></div>
+          </div>
+          <div class="preloader-meta">
+            <span class="preloader-percent" id="preloaderPercent">40%</span>
+            <span class="preloader-percent-dim">|</span>
+            <span class="preloader-step" id="preloaderStep">1/2</span>
+          </div>
+        </div>
+        <div class="preloader-line pl-out"><span class="pl-dim">[</span><span class="pl-success">done</span><span class="pl-dim">]</span> ready in <span id="plTime">2.4s</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skip link -->
+  <a href="#top" class="skip-link" data-i18n="skip.link">Skip to content</a>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header id="siteHeader">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#top" class="brand" aria-label="Venkata — back to top">
+        <span class="brand-mark" aria-hidden="true">V</span>venkata<span class="grad-text">.</span>
+      </a>
+      <div class="nav-center">
+        <div class="navlinks" id="navlinks">
+          <a href="#about"><span class="idx">01</span><span data-i18n="nav.about">About</span></a>
+          <a href="#experience"><span class="idx">02</span><span data-i18n="nav.experience">Experience</span></a>
+          <a href="#projects"><span class="idx">03</span><span data-i18n="nav.projects">Projects</span></a>
+          <a href="#skills"><span class="idx">04</span><span data-i18n="nav.skills">Skills</span></a>
+          <a href="#contact"><span class="idx">05</span><span data-i18n="nav.contact">Contact</span></a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="lang-switch" role="group" aria-label="Language switcher" data-i18n-aria-label="lang.switcherLabel">
+          <button type="button" class="lang-btn active" id="langEN" aria-pressed="true" aria-label="Switch to English" data-i18n-aria-label="lang.toEnglish">EN</button>
+          <button type="button" class="lang-btn" id="langDE" aria-pressed="false" aria-label="Switch to German" data-i18n-aria-label="lang.toGerman">DE</button>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light mode" aria-pressed="false" data-i18n-aria-label="nav.themeToggle">
+          <svg aria-hidden="true" class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg aria-hidden="true" class="icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>
+        </button>
+        <a href="#contact" class="nav-cta" data-i18n="nav.letstalk">Let's talk</a>
+        <button class="navtoggle" id="navtoggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu" data-i18n-aria-label="nav.toggleNav"><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" aria-hidden="true" inert>
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu" data-i18n-aria-label="nav.closeMenu">✕</button>
+    <a href="#about"><span class="idx">01</span><span data-i18n="nav.about">About</span></a>
+    <a href="#experience"><span class="idx">02</span><span data-i18n="nav.experience">Experience</span></a>
+    <a href="#projects"><span class="idx">03</span><span data-i18n="nav.projects">Projects</span></a>
+    <a href="#skills"><span class="idx">04</span><span data-i18n="nav.skills">Skills</span></a>
+    <a href="#contact"><span class="idx">05</span><span data-i18n="nav.contact">Contact</span></a>
+    <div class="lang-switch" role="group" aria-label="Language switcher" style="align-self:flex-start; margin:4px 0 0;" data-i18n-aria-label="lang.switcherLabel">
+      <button type="button" class="lang-btn active" id="langEN-mobile" aria-pressed="true" aria-label="Switch to English" data-i18n-aria-label="lang.toEnglish">EN</button>
+      <button type="button" class="lang-btn" id="langDE-mobile" aria-pressed="false" aria-label="Switch to German" data-i18n-aria-label="lang.toGerman">DE</button>
+    </div>
+    <div class="mobile-menu-foot">
+      <span class="status-dot" aria-hidden="true"></span>
+      <a href="mailto:avvarinarayana97@gmail.com" class="social-icon" aria-label="Email" data-i18n-aria-label="social.email">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 6l9 7 9-7"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="social-icon placeholder-link" aria-disabled="true" title="Placeholder link — profile URL not added yet" data-i18n-title="social.placeholderTitle" aria-label="LinkedIn (placeholder link)" data-i18n-aria-label="social.linkedinPlaceholder">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg>
+      </a>
+      <a href="https://github.com/your-username" target="_blank" rel="noopener" class="social-icon placeholder-link" aria-disabled="true" title="Placeholder link — profile URL not added yet" data-i18n-title="social.placeholderTitle" aria-label="GitHub (placeholder link)" data-i18n-aria-label="social.githubPlaceholder">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.95.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.55-3.88-1.55-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.95.1-.75.4-1.25.73-1.53-2.55-.3-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.18-3.08-.12-.3-.51-1.5.11-3.14 0 0 .96-.31 3.15 1.18.9-.25 1.88-.38 2.85-.38.97 0 1.94.13 2.85.38 2.18-1.49 3.15-1.18 3.15-1.18.62 1.64.23 2.84.12 3.14.73.8 1.17 1.82 1.17 3.08 0 4.43-2.7 5.4-5.26 5.68.42.36.78 1.08.78 2.18v3.23c0 .32.21.68.8.56C20.2 21.4 23.5 17.1 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="glow-a"></div>
+        <div class="glow-b"></div>
+        <!-- Subtle network graph SVG -->
+        <svg width="480" height="420" viewBox="0 0 480 420" fill="none" aria-hidden="true">
+          <g stroke="currentColor" stroke-width="1" opacity="0.4" style="color:var(--border-strong)">
+            <line x1="60" y1="80" x2="220" y2="150"/>
+            <line x1="220" y1="150" x2="380" y2="70"/>
+            <line x1="220" y1="150" x2="260" y2="300"/>
+            <line x1="260" y1="300" x2="120" y2="360"/>
+            <line x1="260" y1="300" x2="410" y2="330"/>
+            <line x1="60" y1="80" x2="120" y2="360" stroke-dasharray="2 6"/>
+          </g>
+          <g fill="var(--accent)">
+            <circle cx="60" cy="80" r="4"/>
+            <circle cx="380" cy="70" r="3"/>
+            <circle cx="260" cy="300" r="5"/>
+            <circle cx="410" cy="330" r="3"/>
+          </g>
+          <g fill="var(--accent-2)">
+            <circle cx="220" cy="150" r="5"/>
+            <circle cx="120" cy="360" r="3"/>
+          </g>
+        </svg>
+        <!-- Dash field for cursor interaction -->
+        <div class="dash-field"></div>
+        <!-- Crosshair cursor indicator -->
+        <div class="cursor-plus"></div>
+      </div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <!-- Status pill -->
+          <span class="kicker-badge reveal reveal-hero">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.badge">Open to opportunities · Berlin &amp; Remote (Germany)</span>
+          </span>
+
+          <!-- Name line -->
+          <p class="hero-name reveal reveal-hero reveal-delay-1">
+            <span class="rule" aria-hidden="true"></span>
+            <span class="wave-emoji" aria-hidden="true">👋</span>
+            <strong>Venkata Bhavanarayana Avvari</strong> — DevOps Engineer
+          </p>
+
+          <!-- Headline -->
+          <h1 id="hero-heading" class="reveal reveal-hero reveal-delay-2" data-i18n-html="hero.headline">
+            Kubernetes. CI/CD.<br class="hero-break">Cloud infrastructure<br class="hero-break">built for <span class="grad-text">production.</span>
+          </h1>
+
+          <!-- Lede -->
+          <p class="lede reveal reveal-hero reveal-delay-3" data-i18n="hero.lede">
+            DevOps Engineer with hands-on experience at Carl Zeiss AG and Advayas Tech Solutions. I build and automate the infrastructure layer — clusters, pipelines, and integration platforms — with a focus on reliability and clarity.
+          </p>
+
+          <!-- Stack strip -->
+          <div class="stack-strip reveal reveal-hero reveal-delay-4" aria-label="Core technologies">
+            <span class="stack-chip">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3v3M12 18v3M21 12h-3M6 12H3M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1M18.4 18.4l-2.1-2.1M7.7 7.7L5.6 5.6"/></svg>Kubernetes
+            </span>
+            <span class="stack-chip">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4v5h5M20 20v-5h-5"/><path d="M4.6 15A8 8 0 0019 9M19.4 9A8 8 0 005 15"/></svg>Terraform
+            </span>
+            <span class="stack-chip">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 18a4.5 4.5 0 01-1-8.9A5.5 5.5 0 0116.5 8 4 4 0 0118 16H7z"/></svg>AWS
+            </span>
+            <span class="stack-chip">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="6" height="6"/><rect x="9" y="8" width="6" height="6"/><rect x="15" y="8" width="6" height="6"/><rect x="9" y="2" width="6" height="6"/><path d="M3 16c0 3 4 5 9 5s9-2 9-5"/></svg>Docker
+            </span>
+            <span class="stack-chip">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4v5h5M20 20v-5h-5"/><path d="M4.6 15A8 8 0 0019 9M19.4 9A8 8 0 005 15"/></svg>CI/CD
+            </span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="cta-row reveal reveal-hero reveal-delay-5">
+            <a href="#contact" class="btn btn-primary">
+              <span data-i18n="cta.contact">Contact Me</span>
+              <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="Assets/venkata%20lebenslauf.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <span data-i18n="cta.resume">View Resume</span>
+              <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+            </a>
+            <a href="#projects" class="btn btn-ghost"><span data-i18n="cta.projects">View Projects</span></a>
+          </div>
+
+          <!-- Social links -->
+          <div class="social-row reveal reveal-hero reveal-delay-5">
+            <a href="mailto:avvarinarayana97@gmail.com" class="social-icon" aria-label="Email" data-i18n-aria-label="social.email">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 6l9 7 9-7"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="social-icon placeholder-link" aria-disabled="true" title="Placeholder link — replace with your LinkedIn URL" data-i18n-title="social.linkedinTitle" aria-label="LinkedIn (placeholder link — update with your profile URL)" data-i18n-aria-label="social.linkedinPlaceholderLong">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg>
+            </a>
+            <a href="https://github.com/your-username" target="_blank" rel="noopener" class="social-icon placeholder-link" aria-disabled="true" title="Placeholder link — replace with your GitHub URL" data-i18n-title="social.githubTitle" aria-label="GitHub (placeholder link — update with your profile URL)" data-i18n-aria-label="social.githubPlaceholderLong">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.95.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.55-3.88-1.55-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.95.1-.75.4-1.25.73-1.53-2.55-.3-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.18-3.08-.12-.3-.51-1.5.11-3.14 0 0 .96-.31 3.15 1.18.9-.25 1.88-.38 2.85-.38.97 0 1.94.13 2.85.38 2.18-1.49 3.15-1.18 3.15-1.18.62 1.64.23 2.84.12 3.14.73.8 1.17 1.82 1.17 3.08 0 4.43-2.7 5.4-5.26 5.68.42.36.78 1.08.78 2.18v3.23c0 .32.21.68.8.56C20.2 21.4 23.5 17.1 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Photo + Terminal aside -->
+        <aside class="hero-aside reveal reveal-hero reveal-delay-6" aria-label="Profile and quick facts">
+          <!-- Portrait with stationary gradient ring -->
+          <div class="portrait-wrap">
+            <div class="portrait-ring" aria-hidden="true"></div>
+            <img
+              src="Assets/profile.png"
+              alt="Portrait of Venkata Bhavanarayana Avvari"
+              class="portrait"
+              width="280"
+              height="280"
+              loading="eager"
+              decoding="async">
+            <div class="portrait-badge" aria-hidden="true">
+              <span class="portrait-badge-dot"></span>
+              <span>Open to work</span>
+            </div>
+          </div>
+          <div class="terminal">
+            <div class="terminal-bar" aria-hidden="true">
+              <span class="terminal-dot r"></span>
+              <span class="terminal-dot y"></span>
+              <span class="terminal-dot g"></span>
+              <span class="terminal-title">venkata@berlin — zsh</span>
+            </div>
+            <div class="terminal-body">
+              <div><span class="prompt">➜</span> <span class="path">~</span> <span class="cmd">whoami</span></div>
+              <div class="out">DevOps Engineer — <span data-i18n="hero.terminalRole">Cloud &amp; Integration Platforms</span></div>
+              <div><span class="prompt">➜</span> <span class="path">~</span> <span class="cmd">kubectl get nodes</span></div>
+              <div class="tbl">
+                <span class="h">NAME</span><span class="h">STATUS</span><span class="h">ROLE</span>
+                <span>node-eu-central-1a</span><span class="ok">Ready</span><span>control-plane</span>
+                <span>node-eu-central-1b</span><span class="ok">Ready</span><span>worker</span>
+              </div>
+              <div><span class="prompt">➜</span> <span class="path">~</span> <span class="cmd">cat status.txt</span></div>
+              <div class="out">location: <strong>Berlin, Germany</strong></div>
+              <div class="out">status: <strong data-i18n="hero.terminalStatus">open to opportunities</strong></div>
+              <div><span class="prompt">➜</span> <span class="path">~</span> <span class="cmd">_<span class="terminal-caret" aria-hidden="true"></span></span></div>
+            </div>
+          </div>
+          <div class="aside-note panel">
+            <span data-i18n="hero.focusAreas">focus areas</span>
+            <b>Kubernetes · IaC · Observability</b>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== METRICS ===== -->
+    <section class="metrics" aria-label="Key numbers">
+      <div class="wrap">
+        <div class="metrics-panel panel reveal">
+          <div class="metric">
+            <div class="metric-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v6M12 16v6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg>
+            </div>
+            <div>
+              <div class="metric-num">2+</div>
+              <div class="metric-label" data-i18n="metrics.years">Years Experience</div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v14"/></svg>
+            </div>
+            <div>
+              <div class="metric-num">3</div>
+              <div class="metric-label" data-i18n="metrics.projects">Projects Delivered</div>
+            </div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
+            </div>
+            <div>
+              <div class="metric-num">20+</div>
+              <div class="metric-label" data-i18n="metrics.tech">Technologies Used</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-kicker" data-i18n="about.kicker">01 / About</div>
+          <h2 data-i18n="about.heading">Infrastructure engineer. Systems thinker.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal" data-i18n-html="about.text">
+            <p>I started on the infrastructure side — <strong>containers, clusters, and pipelines</strong> — building CI/CD at Advayas Tech Solutions and standing up AWS environments with Terraform and Ansible. Kubernetes, monitoring stacks, and cloud automation are where I'm most at home.</p>
+            <p>More recently, at <strong>Carl Zeiss AG</strong>, I moved a level up the stack: documenting and automating an enterprise integration platform (SAP, ESB, LCM), and working closely with business analysts on how integrations actually get planned and shipped.</p>
+            <p>I'm now based in <strong>Berlin</strong>, pairing that hands-on DevOps background with a Master's in Data Science, and looking for a role where reliable systems and clear communication both matter.</p>
+          </div>
+          <div class="about-highlights reveal-group">
+            <div class="highlight-card panel">
+              <div class="highlight-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l9 4.9V17L12 22l-9-5.1V6.9L12 2z"/><path d="M12 22V12M21 6.9L12 12 3 6.9"/></svg>
+              </div>
+              <div>
+                <h3 data-i18n="about.card1.title">Cloud-native infrastructure</h3>
+                <p data-i18n="about.card1.text">Kubernetes, Docker, and CI/CD pipelines built for scale and resilience.</p>
+              </div>
+            </div>
+            <div class="highlight-card panel">
+              <div class="highlight-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+              </div>
+              <div>
+                <h3 data-i18n="about.card2.title">Infrastructure as code</h3>
+                <p data-i18n="about.card2.text">Terraform, Ansible, and CloudFormation for repeatable, auditable environments.</p>
+              </div>
+            </div>
+            <div class="highlight-card panel">
+              <div class="highlight-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </div>
+              <div>
+                <h3 data-i18n="about.card3.title">Integration platforms</h3>
+                <p data-i18n="about.card3.text">SAP, ESB, and REST/SOAP/IDoc/RFC systems documented and automated end-to-end.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-kicker" data-i18n="experience.kicker">02 / Experience</div>
+          <h2 data-i18n="experience.heading">Where I've worked.</h2>
+          <p data-i18n="experience.sub">Two roles spanning enterprise integration and hands-on cloud DevOps — different layers of the same stack.</p>
+        </div>
+        <div class="job-list reveal-group">
+
+          <!-- Job 1: Carl Zeiss AG -->
+          <article class="job">
+            <div class="job-card panel">
+              <div class="job-card-head">
+                <div class="job-logo mono" aria-hidden="true">CZ</div>
+                <div class="job-head-text">
+                  <h3 data-i18n="exp1.title">Digital Integration Platforms Intern</h3>
+                  <span class="job-company"><strong>Carl Zeiss AG</strong> · Oberkochen, Germany</span>
+                </div>
+                <span class="job-date" aria-label="May 2024 to October 2024">MAY 2024 — OCT 2024</span>
+              </div>
+              <p class="job-focus" data-i18n="exp1.focus">Focus: enterprise SAP integration documentation, ESB lifecycle management, and automating the data that feeds them.</p>
+              <div class="job-highlight">
+                <span class="job-highlight-icon" aria-hidden="true">★</span>
+                <p data-i18n="exp1.highlight">Built a framework to automate standard data transfer from source systems directly into the SAP integration platform's documentation — replacing manual upkeep with an automated sync.</p>
+              </div>
+              <ul class="job-list-items" role="list" data-i18n-html="exp1.list">
+                <li>Migrated existing SAP integration platform documentation into a new environment.</li>
+                <li>Supported the integration team on undocumented interfaces across flagship projects (FIT4, NGCRM) at Zeiss CIT.</li>
+                <li>Gained deep working knowledge of the Integration Master File and ESB lifecycle management (LCM).</li>
+                <li>Worked alongside business analysts on epics, features, and backlog management.</li>
+              </ul>
+              <div class="job-tech">
+                <span class="job-tech-label" data-i18n="tech.label">Technologies</span>
+                <div class="tag-row" role="list" aria-label="Technologies used">
+                  <span class="tag" role="listitem">SAP Integration Platform</span>
+                  <span class="tag" role="listitem">Enterprise Service Bus</span>
+                  <span class="tag" role="listitem">Lifecycle Management (LCM)</span>
+                  <span class="tag" role="listitem">Agile / Backlog Management</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job 2: Advayas Tech Solutions -->
+          <article class="job">
+            <div class="job-card panel">
+              <div class="job-card-head">
+                <div class="job-logo mono" aria-hidden="true">AT</div>
+                <div class="job-head-text">
+                  <h3 data-i18n="jobtitle.devops">DevOps Engineer</h3>
+                  <span class="job-company"><strong>Advayas Tech Solutions</strong> · Pune, India</span>
+                </div>
+                <span class="job-date" aria-label="June 2018 to August 2019">JUN 2018 — AUG 2019</span>
+              </div>
+              <p class="job-focus" data-i18n="exp2.focus">Focus: end-to-end DevOps — CI/CD pipelines, Kubernetes deployments, AWS infrastructure automation, and cluster observability.</p>
+              <div class="job-highlight">
+                <span class="job-highlight-icon" aria-hidden="true">★</span>
+                <p data-i18n="exp2.highlight">Led delivery of a health app and a payments app end-to-end, managing backlogs in Azure DevOps and Jira across agile teams — from pipeline to production.</p>
+              </div>
+              <ul class="job-list-items" role="list" data-i18n-html="exp2.list">
+                <li>Built robust CI/CD pipelines in GitLab and deployed containerized apps to Kubernetes for improved scalability and performance.</li>
+                <li>Automated AWS infrastructure (VPC, EC2, IAM, S3, ELB, SNS, CloudWatch, Route53) with Terraform, Ansible, and CloudFormation.</li>
+                <li>Installed monitoring and logging with Helm, the ELK stack, Prometheus, and Grafana for high availability.</li>
+                <li>Established Kubernetes authorization and authentication mechanisms to strengthen cluster security.</li>
+              </ul>
+              <div class="job-tech">
+                <span class="job-tech-label" data-i18n="tech.label">Technologies</span>
+                <div class="tag-row" role="list" aria-label="Technologies used">
+                  <span class="tag" role="listitem">Kubernetes</span>
+                  <span class="tag" role="listitem">GitLab CI/CD</span>
+                  <span class="tag" role="listitem">Terraform</span>
+                  <span class="tag" role="listitem">Ansible</span>
+                  <span class="tag" role="listitem">CloudFormation</span>
+                  <span class="tag" role="listitem">AWS (VPC / EC2 / IAM / S3 / ELB)</span>
+                  <span class="tag" role="listitem">Helm</span>
+                  <span class="tag" role="listitem">Prometheus &amp; Grafana</span>
+                  <span class="tag" role="listitem">ELK Stack</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-kicker" data-i18n="projects.kicker">03 / Projects</div>
+          <h2 data-i18n="projects.heading">Featured work.</h2>
+          <p data-i18n="projects.sub">Representative projects drawn from my professional experience. Expand any card for the problem, solution, and architecture behind it.</p>
+        </div>
+
+        <div class="project-filters reveal" id="projectFilters" role="group" aria-label="Filter projects by technology" data-i18n-aria-label="projects.filterLabel">
+          <button class="filter-chip active" data-filter="all" aria-pressed="true" data-i18n="filter.all">All</button>
+          <button class="filter-chip" data-filter="kubernetes" aria-pressed="false">Kubernetes</button>
+          <button class="filter-chip" data-filter="aws" aria-pressed="false">AWS</button>
+          <button class="filter-chip" data-filter="cicd" aria-pressed="false" data-i18n="filter.cicd">CI/CD &amp; Automation</button>
+          <button class="filter-chip" data-filter="integration" aria-pressed="false" data-i18n="filter.integration">Integration</button>
+        </div>
+
+        <div class="project-grid reveal-group">
+
+          <!-- Project 01 -->
+          <article class="project panel" data-tags="integration cicd">
+            <div class="project-head">
+              <div>
+                <span class="project-index" data-i18n="project1.index">01 · Enterprise Integration</span>
+                <h3>Integration Docs Auto-Sync Framework</h3>
+              </div>
+              <div class="project-links">
+                <a href="#" class="placeholder-link" title="Placeholder link — add your repository URL" aria-disabled="true" data-i18n-title="project.repoTitle" data-i18n="project.repoPlaceholder">GitHub (placeholder)</a>
+              </div>
+            </div>
+            <p class="project-summary" data-i18n="project1.summary">A framework that pulls standard data from source systems directly into the SAP integration platform's documentation on Zeiss CIT — replacing manual upkeep with an automated sync.</p>
+            <div class="tag-row" role="list" aria-label="Technologies used">
+              <span class="tag" role="listitem">SAP</span><span class="tag" role="listitem">ESB</span><span class="tag" role="listitem">Integration Master File</span><span class="tag" role="listitem">Automation</span>
+            </div>
+            <button class="project-toggle" aria-expanded="false" aria-controls="project-detail-0">
+              <span data-i18n="project.viewDetails">View technical details</span>
+              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="project-detail" id="project-detail-0">
+              <div class="project-detail-inner">
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.problem">Problem</span>
+                  <p data-i18n="project1.problem">The SAP integration platform's documentation at Zeiss CIT needed to move to a new environment, and standard data from source systems had to be kept in sync with it manually.</p>
+                </div>
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.solution">Solution</span>
+                  <p data-i18n="project1.solution">Migrated the existing documentation into the new environment, then built a framework that automates the transfer of standard data from source systems straight into the documentation platform — supporting undocumented interfaces across flagship projects (FIT4, NGCRM).</p>
+                </div>
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.architecture">Architecture</span>
+                  <div class="arch-diagram" role="img" aria-label="Architecture diagram: Source Systems arrows to Auto-Sync Framework arrows to SAP Integration Docs">
+                    <div class="arch-node"><span class="arch-node-title" data-i18n="project1.arch.sourceSystems">Source Systems</span><span class="arch-node-sub">FIT4 · NGCRM</span></div>
+                    <div class="arch-arrow" aria-hidden="true"><svg width="34" height="14" viewBox="0 0 34 14" fill="none"><path d="M0 7h27M22 2l6 5-6 5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                    <div class="arch-node accent"><span class="arch-node-title">Auto-Sync Framework</span><span class="arch-node-sub" data-i18n="project1.arch.transfer">standard data transfer</span></div>
+                    <div class="arch-arrow" aria-hidden="true"><svg width="34" height="14" viewBox="0 0 34 14" fill="none"><path d="M0 7h27M22 2l6 5-6 5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                    <div class="arch-node"><span class="arch-node-title" data-i18n="project1.arch.docs">SAP Integration Docs</span><span class="arch-node-sub">ESB · LCM</span></div>
+                  </div>
+                </div>
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.decisions">Engineering decisions</span>
+                  <ul role="list" data-i18n-html="project1.decisions">
+                    <li>Automated the standard-data path rather than relying on manual entry, targeting interfaces already in active use across FIT4 and NGCRM.</li>
+                    <li>Built the framework to fit the existing Integration Master File and ESB lifecycle management (LCM) conventions, rather than introducing a parallel documentation model.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project panel" data-tags="kubernetes cicd">
+            <div class="project-head">
+              <div>
+                <span class="project-index" data-i18n="project2.index">02 · Cloud-Native Ops</span>
+                <h3>K8s Cluster Observability Stack</h3>
+              </div>
+              <div class="project-links">
+                <a href="#" class="placeholder-link" title="Placeholder link — add your repository URL" aria-disabled="true" data-i18n-title="project.repoTitle" data-i18n="project.repoPlaceholder">GitHub (placeholder)</a>
+              </div>
+            </div>
+            <p class="project-summary" data-i18n="project2.summary">A monitoring and logging setup for containerized workloads on Kubernetes, combining Prometheus, Grafana, and the ELK stack for high availability.</p>
+            <div class="tag-row" role="list" aria-label="Technologies used">
+              <span class="tag" role="listitem">Kubernetes</span><span class="tag" role="listitem">Prometheus</span><span class="tag" role="listitem">Grafana</span><span class="tag" role="listitem">Helm</span><span class="tag" role="listitem">ELK Stack</span>
+            </div>
+            <button class="project-toggle" aria-expanded="false" aria-controls="project-detail-1">
+              <span data-i18n="project.viewDetails">View technical details</span>
+              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="project-detail" id="project-detail-1">
+              <div class="project-detail-inner">
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.problem">Problem</span>
+                  <p data-i18n="project2.problem">Containerized applications deployed to Kubernetes needed monitoring and logging in place to support high availability, plus stronger authorization and authentication on the cluster itself.</p>
+                </div>
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.solution">Solution</span>
+                  <p data-i18n="project2.solution">Installed a monitoring and logging stack via Helm — Prometheus and Grafana for metrics, the ELK stack for logs — and established Kubernetes authorization and authentication mechanisms to strengthen cluster security.</p>
+                </div>
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.architecture">Architecture</span>
+                  <div class="arch-diagram" role="img" aria-label="Architecture diagram showing K8s pods connected to Prometheus and Grafana for metrics, and K8s pods connected to ELK stack for logs">
+                    <div class="arch-node"><span class="arch-node-title">K8s Pods</span><span class="arch-node-sub" data-i18n="project2.arch.apps">containerized apps</span></div>
+                    <div class="arch-arrow" aria-hidden="true"><svg width="34" height="14" viewBox="0 0 34 14" fill="none"><path d="M0 7h27M22 2l6 5-6 5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                    <div class="arch-node accent"><span class="arch-node-title">Prometheus</span><span class="arch-node-sub" data-i18n="project2.arch.metrics">metrics</span></div>
+                    <div class="arch-arrow" aria-hidden="true"><svg width="34" height="14" viewBox="0 0 34 14" fill="none"><path d="M0 7h27M22 2l6 5-6 5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                    <div class="arch-node"><span class="arch-node-title">Grafana</span><span class="arch-node-sub" data-i18n="project2.arch.dashboards">dashboards</span></div>
+                  </div>
+                  <div class="arch-diagram" role="img" aria-label="Architecture diagram showing K8s pods connected to ELK stack for centralized logging" style="margin-top:10px;">
+                    <div class="arch-node"><span class="arch-node-title">K8s Pods</span><span class="arch-node-sub" data-i18n="project2.arch.logs">log output</span></div>
+                    <div class="arch-arrow" aria-hidden="true"><svg width="34" height="14" viewBox="0 0 34 14" fill="none"><path d="M0 7h27M22 2l6 5-6 5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                    <div class="arch-node accent2"><span class="arch-node-title">ELK Stack</span><span class="arch-node-sub" data-i18n="project2.arch.centralized">centralized logs</span></div>
+                  </div>
+                </div>
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.decisions">Engineering decisions</span>
+                  <ul role="list" data-i18n-html="project2.decisions">
+                    <li>Installed components with Helm so the monitoring stack could be managed as repeatable, versioned releases rather than one-off manifests.</li>
+                    <li>Paired metrics (Prometheus / Grafana) with centralized logs (ELK) to cover both sides of observability on the same cluster.</li>
+                    <li>Layered in Kubernetes RBAC-style authorization and authentication so the newly-visible cluster was secured as well as observed.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project panel" data-tags="aws cicd">
+            <div class="project-head">
+              <div>
+                <span class="project-index" data-i18n="project3.index">03 · Infrastructure as Code</span>
+                <h3>AWS Infrastructure-as-Code Suite</h3>
+              </div>
+              <div class="project-links">
+                <a href="#" class="placeholder-link" title="Placeholder link — add your repository URL" aria-disabled="true" data-i18n-title="project.repoTitle" data-i18n="project.repoPlaceholder">GitHub (placeholder)</a>
+              </div>
+            </div>
+            <p class="project-summary" data-i18n="project3.summary">Reusable Terraform and Ansible modules for provisioning VPCs, EC2, and ELB, plus CloudFormation templates for repeatable, auditable AWS setup.</p>
+            <div class="tag-row" role="list" aria-label="Technologies used">
+              <span class="tag" role="listitem">Terraform</span><span class="tag" role="listitem">Ansible</span><span class="tag" role="listitem">CloudFormation</span><span class="tag" role="listitem">AWS</span>
+            </div>
+            <button class="project-toggle" aria-expanded="false" aria-controls="project-detail-2">
+              <span data-i18n="project.viewDetails">View technical details</span>
+              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="project-detail" id="project-detail-2">
+              <div class="project-detail-inner">
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.problem">Problem</span>
+                  <p data-i18n="project3.problem">Core AWS infrastructure — VPC, EC2, IAM, S3, ELB, SNS, CloudWatch, and Route53 — needed to be provisioned in a repeatable, auditable way rather than configured by hand.</p>
+                </div>
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.solution">Solution</span>
+                  <p data-i18n="project3.solution">Built reusable Terraform and Ansible modules to provision and configure the core AWS resources, with CloudFormation templates as an alternative repeatable setup path, feeding into the same CI/CD pipelines and Kubernetes deployments.</p>
+                </div>
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.architecture">Architecture</span>
+                  <div class="arch-diagram" role="img" aria-label="Architecture diagram showing Terraform and CloudFormation provisioning infrastructure for VPC, EC2, ELB and IAM, S3, Route53, CloudWatch, SNS">
+                    <div class="arch-node accent"><span class="arch-node-title">Terraform / CloudFormation</span><span class="arch-node-sub" data-i18n="project3.arch.iac">infrastructure as code</span></div>
+                    <div class="arch-arrow" aria-hidden="true"><svg width="34" height="14" viewBox="0 0 34 14" fill="none"><path d="M0 7h27M22 2l6 5-6 5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                    <div class="arch-node"><span class="arch-node-title">VPC / EC2 / ELB</span><span class="arch-node-sub" data-i18n="project3.arch.network">network &amp; compute</span></div>
+                    <div class="arch-arrow" aria-hidden="true"><svg width="34" height="14" viewBox="0 0 34 14" fill="none"><path d="M0 7h27M22 2l6 5-6 5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                    <div class="arch-node"><span class="arch-node-title">IAM / S3 / Route53</span><span class="arch-node-sub">CloudWatch · SNS</span></div>
+                  </div>
+                </div>
+                <div class="pd-block">
+                  <span class="pd-label" data-i18n="pd.decisions">Engineering decisions</span>
+                  <ul role="list" data-i18n-html="project3.decisions">
+                    <li>Split responsibilities across Terraform for core resource provisioning and Ansible for configuration, with CloudFormation templates kept as a repeatable alternative path.</li>
+                    <li>Included CloudWatch and SNS in the module set so infrastructure changes and issues surface as alerts rather than requiring manual checks.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-kicker" data-i18n="skills.kicker">04 / Skills</div>
+          <h2 data-i18n="skills.heading">Toolset, organized by function.</h2>
+          <p data-i18n="skills.sub">Grouped the way an infrastructure team actually divides the work — from provisioning through delivery.</p>
+        </div>
+        <div class="skills-grid reveal-group">
+
+          <div class="skill-group panel">
+            <div class="skill-group-head">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 18a4.5 4.5 0 01-1-8.9A5.5 5.5 0 0116.5 8 4 4 0 0118 16H7z"/></svg>
+              </div>
+              <h3 data-i18n="skills.group1">Cloud &amp; Infrastructure</h3>
+            </div>
+            <div class="badge-row" role="list" aria-label="Skills">
+              <span class="badge" role="listitem">AWS (EC2, IAM, S3, VPC, Route53)</span>
+              <span class="badge" role="listitem">Microsoft Azure</span>
+              <span class="badge" role="listitem">Terraform</span>
+              <span class="badge" role="listitem">CloudFormation</span>
+              <span class="badge" role="listitem">Ansible</span>
+            </div>
+          </div>
+
+          <div class="skill-group panel">
+            <div class="skill-group-head">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="6" height="6"/><rect x="9" y="8" width="6" height="6"/><rect x="15" y="8" width="6" height="6"/><rect x="9" y="2" width="6" height="6"/><path d="M3 16c0 3 4 5 9 5s9-2 9-5"/></svg>
+              </div>
+              <h3 data-i18n="skills.group2">Containers &amp; Kubernetes</h3>
+            </div>
+            <div class="badge-row" role="list" aria-label="Skills">
+              <span class="badge" role="listitem">Kubernetes</span>
+              <span class="badge" role="listitem">Docker</span>
+              <span class="badge" role="listitem">Helm</span>
+              <span class="badge" role="listitem">RBAC / Cluster Auth &amp; AuthZ</span>
+            </div>
+          </div>
+
+          <div class="skill-group panel">
+            <div class="skill-group-head">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4v5h5M20 20v-5h-5"/><path d="M4.6 15A8 8 0 0019 9M19.4 9A8 8 0 005 15"/></svg>
+              </div>
+              <h3 data-i18n="skills.group3">CI/CD &amp; Automation</h3>
+            </div>
+            <div class="badge-row" role="list" aria-label="Skills">
+              <span class="badge" role="listitem">GitLab CI/CD</span>
+              <span class="badge" role="listitem">Jenkins</span>
+              <span class="badge" role="listitem">Infrastructure Automation</span>
+              <span class="badge" role="listitem">Documentation Auto-Sync</span>
+            </div>
+          </div>
+
+          <div class="skill-group panel">
+            <div class="skill-group-head">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
+              </div>
+              <h3 data-i18n="skills.group4">Monitoring &amp; Observability</h3>
+            </div>
+            <div class="badge-row" role="list" aria-label="Skills">
+              <span class="badge" role="listitem">Prometheus</span>
+              <span class="badge" role="listitem">Grafana</span>
+              <span class="badge" role="listitem">ELK Stack</span>
+              <span class="badge" role="listitem">AWS CloudWatch &amp; SNS</span>
+            </div>
+          </div>
+
+          <div class="skill-group panel">
+            <div class="skill-group-head">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </div>
+              <h3 data-i18n="skills.group5">Integration</h3>
+            </div>
+            <div class="badge-row" role="list" aria-label="Skills">
+              <span class="badge" role="listitem">SAP Integration Platform</span>
+              <span class="badge" role="listitem">Enterprise Service Bus</span>
+              <span class="badge" role="listitem">REST / SOAP / IDoc / RFC</span>
+              <span class="badge" role="listitem">Integration Master File &amp; LCM</span>
+            </div>
+          </div>
+
+          <div class="skill-group panel">
+            <div class="skill-group-head">
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <h3 data-i18n="skills.group6">Development &amp; Collaboration</h3>
+            </div>
+            <div class="badge-row" role="list" aria-label="Skills">
+              <span class="badge" role="listitem">Git / GitHub</span>
+              <span class="badge" role="listitem">Jira</span>
+              <span class="badge" role="listitem">Azure DevOps</span>
+              <span class="badge" role="listitem">Agile / Scrum</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-kicker" data-i18n="contact.kicker">05 / Contact</div>
+          <h2 data-i18n="contact.heading">Let's build something reliable.</h2>
+          <p data-i18n="contact.sub">Open to DevOps, cloud infrastructure, and platform engineering roles in Berlin and remote-friendly teams in Germany.</p>
+        </div>
+        <div class="contact-grid">
+
+          <form class="contact-form panel reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name" data-i18n="form.name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="form.email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="form.message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <p class="form-hint" data-i18n="form.hint">Submitting opens your email client with this message pre-filled — there's no backend attached yet.</p>
+            <button type="submit" class="btn btn-primary">
+              <span data-i18n="form.send">Send Message</span>
+              <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+
+          <div class="contact-side reveal">
+            <div class="avail-card panel">
+              <span class="status-dot" aria-hidden="true" style="margin-top:6px;"></span>
+              <p data-i18n="contact.availability">Currently available — open to new opportunities starting immediately, full-time or contract, Berlin-based or remote (Germany).</p>
+            </div>
+            <div class="contact-links panel">
+              <a href="mailto:avvarinarayana97@gmail.com"><span data-i18n="social.email">Email</span> <span>avvarinarayana97@gmail.com</span></a>
+              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="placeholder-link" aria-disabled="true" title="Placeholder link — profile URL not added yet" data-i18n-title="social.placeholderTitle">LinkedIn <span data-i18n="contact.placeholderLink">placeholder link</span></a>
+              <a href="https://github.com/your-username" target="_blank" rel="noopener" class="placeholder-link" aria-disabled="true" title="Placeholder link — profile URL not added yet" data-i18n-title="social.placeholderTitle">GitHub <span data-i18n="contact.placeholderLink">placeholder link</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-panel panel">
+        <span class="footer-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span data-i18n="footer.status">All systems operational — open to new roles</span>
+        </span>
+        <div class="footer-socials">
+          <a href="mailto:avvarinarayana97@gmail.com" class="social-icon" aria-label="Email" data-i18n-aria-label="social.email">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 6l9 7 9-7"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="social-icon placeholder-link" aria-disabled="true" title="Placeholder link — add real profile URL" data-i18n-title="footer.placeholderTitle" aria-label="LinkedIn (placeholder link)" data-i18n-aria-label="social.linkedinPlaceholder">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg>
+          </a>
+          <a href="https://github.com/your-username" target="_blank" rel="noopener" class="social-icon placeholder-link" aria-disabled="true" title="Placeholder link — add real profile URL" data-i18n-title="footer.placeholderTitle" aria-label="GitHub (placeholder link)" data-i18n-aria-label="social.githubPlaceholder">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.95.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.55-3.88-1.55-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.95.1-.75.4-1.25.73-1.53-2.55-.3-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.18-3.08-.12-.3-.51-1.5.11-3.14 0 0 .96-.31 3.15 1.18.9-.25 1.88-.38 2.85-.38.97 0 1.94.13 2.85.38 2.18-1.49 3.15-1.18 3.15-1.18.62 1.64.23 2.84.12 3.14.73.8 1.17 1.82 1.17 3.08 0 4.43-2.7 5.4-5.26 5.68.42.36.78 1.08.78 2.18v3.23c0 .32.21.68.8.56C20.2 21.4 23.5 17.1 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">© <span id="year">2026</span> Venkata Bhavanarayana Avvari. <span data-i18n="footer.location">Berlin, Germany.</span></p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/translations.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/hero-interaction.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
